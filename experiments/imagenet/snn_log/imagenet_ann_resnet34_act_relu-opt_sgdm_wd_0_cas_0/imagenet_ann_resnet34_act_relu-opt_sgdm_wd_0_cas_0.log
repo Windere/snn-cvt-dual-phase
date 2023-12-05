@@ -1,0 +1,37 @@
+Start running on device cuda
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/home/wzm/.pycharm_helpers/pydev/pydevd.py", line 1483, in _exec
+  File "/home/wzm/.pycharm_helpers/pydev/pydevd.py", line 1483, in _exec
+        pydev_imports.execfile(file, globals, locals)  # execute the scriptpydev_imports.execfile(file, globals, locals)  # execute the script
+
+  File "/home/wzm/.pycharm_helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+  File "/home/wzm/.pycharm_helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+        exec(compile(contents+"\n", file, 'exec'), glob, loc)exec(compile(contents+"\n", file, 'exec'), glob, loc)
+
+  File "/home/wzm/Workspace/opt-dual-cvt-nips/experiments/imagenet/main_convert.py", line 790, in <module>
+  File "/home/wzm/Workspace/opt-dual-cvt-nips/experiments/imagenet/main_convert.py", line 790, in <module>
+        train_ldr, val_ldr, num_class = loadImageNet(args.data_path)train_ldr, val_ldr, num_class = loadImageNet(args.data_path)
+
+  File "/home/wzm/Workspace/opt-dual-cvt-nips/experiments/imagenet/main_convert.py", line 343, in loadImageNet
+  File "/home/wzm/Workspace/opt-dual-cvt-nips/experiments/imagenet/main_convert.py", line 343, in loadImageNet
+        train_data = datasets.ImageFolder(train_data = datasets.ImageFolder(
+
+  File "/home/wzm/Software/Conda/Install/lib/python3.8/site-packages/torchvision/datasets/folder.py", line 310, in __init__
+  File "/home/wzm/Software/Conda/Install/lib/python3.8/site-packages/torchvision/datasets/folder.py", line 310, in __init__
+        super().__init__(super().__init__(
+
+  File "/home/wzm/Software/Conda/Install/lib/python3.8/site-packages/torchvision/datasets/folder.py", line 145, in __init__
+  File "/home/wzm/Software/Conda/Install/lib/python3.8/site-packages/torchvision/datasets/folder.py", line 145, in __init__
+        classes, class_to_idx = self.find_classes(self.root)classes, class_to_idx = self.find_classes(self.root)
+
+  File "/home/wzm/Software/Conda/Install/lib/python3.8/site-packages/torchvision/datasets/folder.py", line 219, in find_classes
+  File "/home/wzm/Software/Conda/Install/lib/python3.8/site-packages/torchvision/datasets/folder.py", line 219, in find_classes
+        return find_classes(directory)return find_classes(directory)
+
+  File "/home/wzm/Software/Conda/Install/lib/python3.8/site-packages/torchvision/datasets/folder.py", line 41, in find_classes
+  File "/home/wzm/Software/Conda/Install/lib/python3.8/site-packages/torchvision/datasets/folder.py", line 41, in find_classes
+        classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())classes = sorted(entry.name for entry in os.scandir(directory) if entry.is_dir())
+
+FileNotFoundErrorFileNotFoundError: : [Errno 2] No such file or directory: '/data1T/wzm/imagenet/train'[Errno 2] No such file or directory: '/data1T/wzm/imagenet/train'
+
